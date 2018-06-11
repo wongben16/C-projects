@@ -1,0 +1,9 @@
+
+public class player1 extends StoneCounter{
+	
+	int numStones;
+	
+	public player1() {
+		numStones = 0;
+	}
+}

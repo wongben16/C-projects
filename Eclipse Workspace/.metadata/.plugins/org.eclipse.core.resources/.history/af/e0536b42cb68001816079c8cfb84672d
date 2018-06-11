@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class BGMain {
+
+	static String question;
+	static int firstNum;
+	static int secondNum;
+	static String operator;
+	static int answer;
+	
+	
+	public static void main(String[] args) {
+		
+	
+		question = JOptionPane.showInputDialog("Enter an addition, subtraction, multiplication, or division problem:");
+		System.out.println(question);
+		
+		//test
+//		question = "hello,      world hi";
+		
+		Scanner scan = new Scanner(question).useDelimiter("\\s+");
+		
+		//test
+//		System.out.println(scan.next());
+//		System.out.println(scan.next());
+//		System.out.println(scan.next());
+		
+		firstNum = Integer.parseInt(scan.next());
+		operator = scan.next();
+		secondNum = Integer.parseInt(scan.next());
+		
+		answer = equationCreator(firstNum, operator, secondNum);
+		JOptionPane.showMessageDialog(null, "= " + answer);
+		System.out.println("= " + answer);
+		
+	}
+	
+	public static int equationCreator(int firstNum, String op, int secondNum) {
+		
+		if (op.equals("+")) {
+			return firstNum + secondNum;
+		}
+		else if (op.equals("-")) {
+			return firstNum - secondNum;
+		}
+		else if (op.equals("*")) {
+			return firstNum * secondNum;
+		}
+		else if (op.equals("/")) {
+			return firstNum / secondNum;
+		}
+		else {
+			return 0;
+		}
+	}
+	
+}

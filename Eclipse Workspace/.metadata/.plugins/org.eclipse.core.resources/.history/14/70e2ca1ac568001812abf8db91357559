@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class BGMain {
+
+	static String question;
+	
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(question);
+	
+		question = JOptionPane.showInputDialog("Enter an addition, subtraction, multiplication, or division problem:");
+		
+		//test
+		question = "hello,      world hi";
+		
+		scan.useDelimiter("\\s");
+		
+		//test
+		System.out.println(scan.next());
+		System.out.println(scan.next());
+		System.out.println(scan.next());
+		
+	}
+	
+}

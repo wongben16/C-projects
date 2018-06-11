@@ -1,0 +1,9 @@
+import javax.swing.JOptionPane;
+
+public class MgSqMain {
+	public static void main(String[] args) {
+		
+		JOptionPane.showMessageDialog(null, "Lets Start a Game.");
+		
+	}
+}

@@ -1,0 +1,22 @@
+
+public class StoneCounter {
+
+	int stones;
+	int takeStones;
+	
+	
+	public StoneCounter() {
+		stones = 17;
+		takeStones = 0;
+		
+	}
+	
+	public String getStones() {
+		return "There are " + stones + " left.";
+	}
+	
+	public void setStone(int removeStone) {
+		stones -= removeStone;
+	}
+	
+}

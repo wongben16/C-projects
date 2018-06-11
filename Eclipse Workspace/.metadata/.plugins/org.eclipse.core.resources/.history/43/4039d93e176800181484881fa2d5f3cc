@@ -1,0 +1,17 @@
+
+public class player1 extends StoneCounter{
+	
+	int numStones;
+	
+	public player1() {
+		numStones = 0;
+	}
+	
+	public String getStones() {
+		return "Player1 has " + numStones + " stones.";
+	}
+	
+	public void setStones(int stones) {
+		numStones = stones;
+	}
+}

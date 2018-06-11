@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class MgSqMain {
+		
+	static String stones;
+	static String name;
+	
+	public static void main(String[] args) {
+		StoneCounter game = new StoneCounter();
+		
+		System.out.println("Lets Start a Game.");
+		System.out.println("How this game works: There are 17 stones, ");
+		System.out.println("the first player will take 1-3 stones and then the second player will do the same.");
+		System.out.println("This will continue until the player who takes the last stones.");
+		System.out.println("Whoever takes the last of the stones will be the loser. ");
+		
+		name = JOptionPane.showInputDialog("What name would you like to be called?");
+		
+		
+		
+//		System.out.println(Integer.parseInt(stones));
+		
+		while(game.stones != 0 && game.stones > 0) {
+				stones = JOptionPane.showInputDialog("Player1: How many stones are you taking? (1-3 stones only)");
+				while (stones.isEmpty() == true  || game.checkInput(Integer.parseInt(stones))== false) {
+					JOptionPane.showMessageDialog(null, "Invalid Number of Stones, Try Again.");
+					stones = JOptionPane.showInputDialog(name + ": How many stones are you taking? (1-3 stones only)");
+				}
+				StoneCounter.setStone(Integer.parseInt(stones));
+				System.out.println(stones + " stones taken... " + game.stones + " stones left.");
+				JOptionPane.showMessageDialog(null, game.getStones());
+			if (game.stones == 0 || game.stones<0) {
+				JOptionPane.showMessageDialog(null, name + " Loses.");
+				break;
+			}
+			else {
+	//			stones = JOptionPane.showInputDialog("Player2: How many stones are you taking? (1-3 stones only)");
+	//			while (game.checkInput(stones) == false){
+	//				JOptionPane.showMessageDialog(null, "Invalid Number of Stones, Try Again.");
+	//				stones = JOptionPane.showInputDialog("Player2: How many stones are you taking? (1-3 stones only)");
+	//			}
+				game.compPlayer();
+				JOptionPane.showMessageDialog(null, "Computer takes " + game.compStone + " stones.");
+				StoneCounter.setStone(game.compStone);
+				System.out.println(game.compStone + " stones taken... " + game.stones + " stones left.");
+				JOptionPane.showMessageDialog(null, game.getStones());
+				if (game.stones == 0 || game.stones<0) {
+					JOptionPane.showMessageDialog(null, "Computer Loses.");
+					break;
+				}
+			}
+		}
+
+		
+	}
+
+}

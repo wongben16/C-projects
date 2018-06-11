@@ -1,0 +1,9 @@
+import javax.swing.JOptionPane;
+
+public class MgSqMain {
+	public static void main(String[] args) {
+		
+		JOptionPane.showMessageDialog(null, "Lets Start a Game.");
+		JOptionPane.showMessageDialog(null,  "How this game works: There are 17 stones, the first player will take 1-3 stones and then the second player will do the same ");
+	}
+}

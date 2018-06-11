@@ -1,0 +1,11 @@
+\\webmail\USERS\benjamin.wong\First CS Project\First CS Project\bin\Debug\netcoreapp2.0\First CS Project.deps.json
+\\webmail\USERS\benjamin.wong\First CS Project\First CS Project\bin\Debug\netcoreapp2.0\First CS Project.runtimeconfig.json
+\\webmail\USERS\benjamin.wong\First CS Project\First CS Project\bin\Debug\netcoreapp2.0\First CS Project.runtimeconfig.dev.json
+\\webmail\USERS\benjamin.wong\First CS Project\First CS Project\bin\Debug\netcoreapp2.0\First CS Project.dll
+\\webmail\USERS\benjamin.wong\First CS Project\First CS Project\bin\Debug\netcoreapp2.0\First CS Project.pdb
+\\webmail\USERS\benjamin.wong\First CS Project\First CS Project\obj\Debug\netcoreapp2.0\First CS Project.csprojAssemblyReference.cache
+\\webmail\USERS\benjamin.wong\First CS Project\First CS Project\obj\Debug\netcoreapp2.0\First CS Project.csproj.CoreCompileInputs.cache
+\\webmail\USERS\benjamin.wong\First CS Project\First CS Project\obj\Debug\netcoreapp2.0\First CS Project.AssemblyInfoInputs.cache
+\\webmail\USERS\benjamin.wong\First CS Project\First CS Project\obj\Debug\netcoreapp2.0\First CS Project.AssemblyInfo.cs
+\\webmail\USERS\benjamin.wong\First CS Project\First CS Project\obj\Debug\netcoreapp2.0\First CS Project.dll
+\\webmail\USERS\benjamin.wong\First CS Project\First CS Project\obj\Debug\netcoreapp2.0\First CS Project.pdb

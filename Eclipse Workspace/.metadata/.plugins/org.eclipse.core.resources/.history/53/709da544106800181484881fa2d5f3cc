@@ -1,0 +1,10 @@
+
+public class player2 {
+
+	int numStones;
+	
+	public player2() {
+		numStones = 0;
+	}
+	
+}

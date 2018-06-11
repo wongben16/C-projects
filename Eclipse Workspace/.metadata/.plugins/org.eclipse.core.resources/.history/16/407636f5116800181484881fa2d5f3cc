@@ -1,0 +1,13 @@
+import javax.swing.JOptionPane;
+
+public class MgSqMain {
+	public static void main(String[] args) {
+		
+		JOptionPane.showMessageDialog(null, "Lets Start a Game.");
+		System.out.println("How this game works: There are 17 stones, "
+				+ "the first player will take 1-3 stones and then the second player will do the same."
+				+ "This will continue until the player who takes the last stones."
+				+ "Whoever takes the last of the stones will be the loser. ");
+		
+	}
+}

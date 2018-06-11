@@ -1,0 +1,33 @@
+
+public class StoneCounter {
+
+	static int stones;
+	int takeStones;
+	int compStone;
+	
+	
+	public StoneCounter() {
+		stones = 17;
+		takeStones = 0;
+		
+	}
+	
+	public static String getStones() {
+		return "There are " + stones + " left.";
+	}
+	
+	public static void setStone(String removeStone) {
+		stones -= Integer.parseInt(removeStone);
+	}
+
+	public static boolean checkInput(String stones2) {
+		if (Integer.parseInt(stones2) <= 3 && Integer.parseInt(stones2) >= 1) {
+			return true;
+		}
+		else {
+			return false;
+		}
+		
+	}
+	
+}

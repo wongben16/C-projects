@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class BGMain {
+
+	static String question;
+	static int firstNum;
+	int secondNum;
+	
+	
+	public static void main(String[] args) {
+		
+	
+		question = JOptionPane.showInputDialog("Enter an addition, subtraction, multiplication, or division problem:");
+		
+		//test
+//		question = "hello,      world hi";
+		
+		Scanner scan = new Scanner(question).useDelimiter("\\s+");
+		
+		//test
+//		System.out.println(scan.next());
+//		System.out.println(scan.next());
+//		System.out.println(scan.next());
+		
+		firstNum = Integer.parseInt(scan.next());
+		
+	}
+	
+}

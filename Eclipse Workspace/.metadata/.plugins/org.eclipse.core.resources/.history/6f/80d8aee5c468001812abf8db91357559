@@ -1,0 +1,13 @@
+import javax.swing.JOptionPane;
+
+public class BGMain {
+
+	static String question;
+	
+	public static void main(String[] args) {
+	
+	question = JOptionPane.showInputDialog("Enter an addition, subtraction, multiplication, or division problem:");
+	
+	}
+	
+}

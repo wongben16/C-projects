@@ -1,0 +1,54 @@
+import java.util.Random;
+
+public class StoneCounter {
+
+	static int stones;
+	int takeStones;
+	static String compStone;
+
+	
+	public StoneCounter() {
+		stones = 17;
+		takeStones = 0;
+		
+	}
+	
+	public static String getStones() {
+		return "There are " + stones + " left.";
+	}
+	
+	public static void setStone(String removeStone) {
+		stones -= Integer.parseInt(removeStone);
+	}
+	
+	public static void setStone(int removeStone) {
+		stones -= removeStone;
+	}
+
+	public static boolean checkInput(String stones2) {
+		if (Integer.parseInt(stones2) <= 3 && Integer.parseInt(stones2) >= 1) {
+			return true;
+		}
+		else {
+			return false;
+		}
+		
+	}
+	
+	public void compPlayer() {
+		Random rand = new Random();
+		int cS = Integer.parseInt(compStone);
+		
+		if (stones < 3) {
+			cS = 2;
+		}
+		else if (stones < 2){
+			cS = 1;
+		}
+		else {
+			cS = rand.nextInt(3) + 1;
+		}
+		 
+	}
+	
+}
