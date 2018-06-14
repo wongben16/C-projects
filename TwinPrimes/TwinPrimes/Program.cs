@@ -5,6 +5,7 @@ namespace TwinPrimes
     class TwinPrimes
     {
         public static String input;
+        public static int[] primes;
 
 
         static void Main(string[] args)
@@ -34,8 +35,10 @@ namespace TwinPrimes
 
         public static void PrimeCalc(String a)
         {
+            //may need to do recursion for this problem
+
             //Console.WriteLine(input);
-            for (int i = 1; i < 1000000000; i+=2)
+            foreach (int j in primes)
             {
 
             }
