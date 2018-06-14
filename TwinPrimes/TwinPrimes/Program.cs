@@ -35,14 +35,24 @@ namespace TwinPrimes
 
         public static void PrimeCalc(String a)
         {
+            double num = Double.Parse(a);
+            SqPrime(num);
             //may need to do recursion for this problem
 
             //Console.WriteLine(input);
+
+            
+
             foreach (int j in primes)
             {
 
             }
 
+        }
+
+        public static double SqPrime(double b)
+        {
+            return Math.Sqrt(b);
         }
     }
 }
