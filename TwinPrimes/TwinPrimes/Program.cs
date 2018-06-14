@@ -35,6 +35,7 @@ namespace TwinPrimes
 
         public static void PrimeCalc(String a)
         {
+<<<<<<< HEAD
             double num = Double.Parse(a);
             SqPrime(num);
             //may need to do recursion for this problem
@@ -43,6 +44,11 @@ namespace TwinPrimes
 
             
 
+=======
+            //may need to do recursion for this problem
+
+            //Console.WriteLine(input);
+>>>>>>> master
             foreach (int j in primes)
             {
 
