@@ -35,8 +35,13 @@ namespace TwinPrimes
 
         public static void PrimeCalc(String a)
         {
+            //may need to do recursion for this problem
+
             //Console.WriteLine(input);
-            
+            foreach (int j in primes)
+            {
+
+            }
 
         }
     }
