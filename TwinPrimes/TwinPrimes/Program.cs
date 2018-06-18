@@ -45,7 +45,10 @@ namespace TwinPrimes
 
             foreach (int j in primes)
             {
+                while (sqRoot >= j)
+                {
 
+                }
             }
 
         }
