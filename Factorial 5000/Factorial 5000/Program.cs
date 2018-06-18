@@ -30,7 +30,7 @@ namespace Factorial_5000
               
             }
 
-            Console.WriteLine("Your factorial equals to: " + bigFactor + ".");
+            Console.WriteLine("\nYour factorial equals to: " + bigFactor + ".");
 
             Console.ReadKey();
         }
