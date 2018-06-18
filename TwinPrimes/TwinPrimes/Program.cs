@@ -5,7 +5,7 @@ namespace TwinPrimes
     class TwinPrimes
     {
         public static String input;
-        public static int[] primes = { 3, 5 };
+        public static int[] primes = {3, 5, 7};
 
 
         static void Main(string[] args)
