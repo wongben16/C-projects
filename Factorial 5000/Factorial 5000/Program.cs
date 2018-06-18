@@ -4,8 +4,8 @@ namespace Factorial_5000
 {
     class Program
     {
-        public static int factor;
-        public static int temp = factor;
+        public static int factor = 1;
+        public static int temp;
 
         static void Main(string[] args)
         {
@@ -21,15 +21,18 @@ namespace Factorial_5000
 
             System.Numerics.BigInteger bigFactor = new System.Numerics.BigInteger(factor);
 
-            while (temp >= 1)
+            temp = factor;
+
+            while (temp != 1)
             {
-                Console.WriteLine(bigFactor + " * " + temp);
+                //Console.WriteLine(bigFactor + " * " + temp);
                 bigFactor *= --temp;
               
             }
 
             Console.WriteLine("Your factorial equals to: " + bigFactor + ".");
 
+            Console.ReadKey();
         }
 
     }
