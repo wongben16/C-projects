@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ben\\C-projects\\First CS Project\\First CS Project\\First CS Project.csproj",
-      "projectName": "First CS Project",
-      "projectPath": "C:\\Users\\Ben\\C-projects\\First CS Project\\First CS Project\\First CS Project.csproj",
+      "projectUniqueName": "C:\\Users\\Ben\\C-projects\\TelephoneNum\\TelephoneNum\\TelephoneNum.csproj",
+      "projectName": "TelephoneNum",
+      "projectPath": "C:\\Users\\Ben\\C-projects\\TelephoneNum\\TelephoneNum\\TelephoneNum.csproj",
       "packagesPath": "C:\\Users\\Ben\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ben\\C-projects\\First CS Project\\First CS Project\\obj\\",
+      "outputPath": "C:\\Users\\Ben\\C-projects\\TelephoneNum\\TelephoneNum\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

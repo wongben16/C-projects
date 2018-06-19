@@ -5,7 +5,7 @@ namespace TwinPrimes
     class TwinPrimes
     {
         public static String input;
-        public static int[] primes;
+        public static int[] primes = {3, 5, 7};
 
 
         static void Main(string[] args)
@@ -45,7 +45,10 @@ namespace TwinPrimes
 
             foreach (int j in primes)
             {
+                while (sqRoot >= j)
+                {
 
+                }
             }
 
         }
