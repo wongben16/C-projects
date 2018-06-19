@@ -6,7 +6,8 @@ namespace TelephoneNum
     {
         static void Main(string[] args)
         {
-            
+            public String path;
+            System.IO.StreamReader();
         }
     }
 }
