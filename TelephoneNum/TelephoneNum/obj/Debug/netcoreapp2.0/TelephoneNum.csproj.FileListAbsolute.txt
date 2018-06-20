@@ -1,0 +1,11 @@
+C:\Users\Ben\C-projects\TelephoneNum\TelephoneNum\bin\Debug\netcoreapp2.0\TelephoneNum.deps.json
+C:\Users\Ben\C-projects\TelephoneNum\TelephoneNum\bin\Debug\netcoreapp2.0\TelephoneNum.runtimeconfig.json
+C:\Users\Ben\C-projects\TelephoneNum\TelephoneNum\bin\Debug\netcoreapp2.0\TelephoneNum.runtimeconfig.dev.json
+C:\Users\Ben\C-projects\TelephoneNum\TelephoneNum\bin\Debug\netcoreapp2.0\TelephoneNum.dll
+C:\Users\Ben\C-projects\TelephoneNum\TelephoneNum\bin\Debug\netcoreapp2.0\TelephoneNum.pdb
+C:\Users\Ben\C-projects\TelephoneNum\TelephoneNum\obj\Debug\netcoreapp2.0\TelephoneNum.csprojAssemblyReference.cache
+C:\Users\Ben\C-projects\TelephoneNum\TelephoneNum\obj\Debug\netcoreapp2.0\TelephoneNum.csproj.CoreCompileInputs.cache
+C:\Users\Ben\C-projects\TelephoneNum\TelephoneNum\obj\Debug\netcoreapp2.0\TelephoneNum.AssemblyInfoInputs.cache
+C:\Users\Ben\C-projects\TelephoneNum\TelephoneNum\obj\Debug\netcoreapp2.0\TelephoneNum.AssemblyInfo.cs
+C:\Users\Ben\C-projects\TelephoneNum\TelephoneNum\obj\Debug\netcoreapp2.0\TelephoneNum.dll
+C:\Users\Ben\C-projects\TelephoneNum\TelephoneNum\obj\Debug\netcoreapp2.0\TelephoneNum.pdb
