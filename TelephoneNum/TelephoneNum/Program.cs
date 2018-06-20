@@ -9,14 +9,16 @@ namespace TelephoneNum
 
         static void Main(string[] args)
         {
+
+
             Setup();
 
             System.Console.WriteLine("Please enter your phone number.");
-            
+            System.Console.ReadLine();
 
 
 
-
+            System.Console.ReadKey();
         }
 
         public static void Setup()
@@ -24,13 +26,13 @@ namespace TelephoneNum
             StringReader nums = new StringReader("Telephone Numbering Plan");
             String temp;
             String temp2;
-            int i = 0;
 
             while ((temp = nums.ReadLine()) != null)
             {
-                temp.Split(@"\s+");
-                telephoneNums[i] = temp;
-                i++;
+                for (int i = 0; (temp = nums.ReadLine()) != null; i++) {
+                    temp.Split(@"\s+");
+                    telephoneNums[i] = temp;
+                }
             }
         }
     }
