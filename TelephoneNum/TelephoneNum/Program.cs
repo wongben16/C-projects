@@ -11,7 +11,7 @@ namespace TelephoneNum
         {
             Setup();
 
-            
+            System.Console.WriteLine("Please enter your phone number.");
             
 
 
