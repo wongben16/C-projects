@@ -29,7 +29,7 @@ namespace TelephoneNum
             {
                 for (int i = 0; (temp = nums.ReadLine()) != null; i++)
                 {
-                    temp.Split(@"\s+");
+                    temp.Split(@"\s+");// this may not be doing what i think it is doing
                     telephoneNums[i] = temp;
                 }
             }

@@ -29,7 +29,7 @@ namespace Factorial_5000
                 bigFactor *= --temp;
               
             }
-
+             
             Console.WriteLine("\nYour factorial equals to: " + bigFactor + ".");
 
             Console.ReadKey();
