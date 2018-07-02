@@ -28,7 +28,8 @@ namespace TelephoneNum
 
             for (int i = 0; i < nums.Length; i++)
             {
-                telephoneNums = nums[i].Split(@"\s+");
+                telephoneNums = nums[i].Split(" ");
+
                 Console.WriteLine(telephoneNums[0]);
             }
 
