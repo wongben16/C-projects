@@ -14,29 +14,19 @@ namespace TelephoneNum
         {
             String[] telephoneNums = new String[12];
             var nums = File.ReadAllLines(@"C:\Users\Ben\C-projects\TelephoneNum\TelephoneNumberingPlan.txt");
+            char[] delimiters = { ' ', '\n'};
+            
             //Setup();
-
-            ////test for textfile opening
-            //while ((temp = nums.ReadLine()) != null)
-            //{
-            //    System.Console.WriteLine(temp);
-            //    counter++;
-            //}
-
-
 
 
             for (int i = 0; i < nums.Length; i++)
             {
-                telephoneNums = nums[i].Split(" ");
+                telephoneNums = nums[i].Split(delimiters);
 
                 Console.WriteLine(telephoneNums[0]);
             }
 
-            //for (int i = 0; i > telephoneNums.Length; i++)
-            //{
-            //    System.Console.WriteLine(telephoneNums[i]);
-            //}
+            
 
             Console.WriteLine("Please enter your phone number.");
             Console.ReadLine();
