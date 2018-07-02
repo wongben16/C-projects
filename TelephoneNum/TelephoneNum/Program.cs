@@ -5,14 +5,15 @@ namespace TelephoneNum
 {
     class Program
     {
-        public static String[] telephoneNums;
-        public static StreamReader nums = new StreamReader(@"C:\Users\Ben\C-projects\TelephoneNum\TelephoneNumberingPlan.txt");
+        
         public static String temp;
         public static String temp2;
         public static int counter = 0;
 
         static void Main(string[] args)
         {
+            String[] telephoneNums = new String[12];
+            var nums = File.ReadAllLines(@"C:\Users\Ben\C-projects\TelephoneNum\TelephoneNumberingPlan.txt");
             //Setup();
 
             ////test for textfile opening
@@ -25,13 +26,10 @@ namespace TelephoneNum
 
 
 
-            while ((temp = nums.ReadLine()) != null)
+            for (int i = 0; i < nums.Length; i++)
             {
-                for (int i = 0; (temp = nums.ReadLine()) != null; i++)
-                {
-                    temp.Split(@"\s+");// this may not be doing what i think it is doing
-                    telephoneNums[i] = temp;
-                }
+                telephoneNums = nums[i].Split(@"\s+");
+                Console.WriteLine(telephoneNums[0]);
             }
 
             //for (int i = 0; i > telephoneNums.Length; i++)
@@ -39,12 +37,12 @@ namespace TelephoneNum
             //    System.Console.WriteLine(telephoneNums[i]);
             //}
 
-            System.Console.WriteLine("Please enter your phone number.");
-            System.Console.ReadLine();
+            Console.WriteLine("Please enter your phone number.");
+            Console.ReadLine();
 
 
 
-            System.Console.ReadKey();
+            Console.ReadKey();
         }
 
         //public static void Setup()
