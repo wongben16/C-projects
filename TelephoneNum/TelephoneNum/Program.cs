@@ -5,11 +5,6 @@ namespace TelephoneNum
 {
     class Program
     {
-        
-        public static String temp;
-        public static String temp2;
-        public static int counter = 0;
-
         static void Main(string[] args)
         {
             String[] telephoneNums = new String[12];
