@@ -114,7 +114,7 @@ namespace TelephoneNum
         {
             if (currentWord == null)
             {
-                reutrn false;
+                return false;
             }
             double dummy;
             return double.TryParse(currentWord, out dummy);
