@@ -109,6 +109,33 @@ namespace TelephoneNum
                 readNextWord();
             }
         }
-        
+
+        public bool hasNextDouble()
+        {
+            if (currentWord == null)
+            {
+                reutrn false;
+            }
+            double dummy;
+            return double.TryParse(currentWord, out dummy);
+        }
+
+        public double nextDouble()
+        {
+            try
+            {
+                return double.Parse(currentWord);
+            }
+            finally
+            {
+                readNextWord();
+            }
+        }
+
+        public bool hasNext()
+        {
+            return currentWord != null;
+        }
+
     }
 }
