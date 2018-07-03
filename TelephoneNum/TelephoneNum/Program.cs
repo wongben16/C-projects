@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 
 namespace TelephoneNum
 {
@@ -9,17 +10,22 @@ namespace TelephoneNum
         {
             String[] telephoneNums = new String[12];
             var nums = File.ReadAllLines(@"C:\Users\Ben\C-projects\TelephoneNum\TelephoneNumberingPlan.txt");
+            Scanner phone = new Scanner(@"C:\Users\Ben\C-projects\TelephoneNum\TelephoneNumberingPlan.txt");
             char[] delimiters = { ' ', '\n'};
-            
+
             //Setup();
 
 
-            for (int i = 0; i < nums.Length; i++)
-            {
-                telephoneNums = nums[i].Split(delimiters);
+            //for (int i = 0; i < nums.Length; i++)
+            //{
+            //    telephoneNums = nums[i].Split(delimiters);
 
-                Console.WriteLine(telephoneNums[0]);
-            }
+            //    Console.WriteLine(telephoneNums[0]);
+            //}
+
+
+            nums = nums[0].Split(" ");
+            Console.WriteLine(nums[0] + nums[1]);
 
             
 
@@ -31,18 +37,7 @@ namespace TelephoneNum
             Console.ReadKey();
         }
 
-        //public static void Setup()
-        //{
-
-
-        //    while ((temp = nums.ReadLine()) != null)
-        //    {
-        //        for (int i = 0; (temp = nums.ReadLine()) != null; i++) {
-        //            temp.Split(@"\s+");
-        //            telephoneNums[i] = temp;
-        //        }
-        //    }
-        //}
+       
     }
 
     class Scanner : System.IO.StringReader
