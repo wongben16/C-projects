@@ -10,8 +10,9 @@ namespace TelephoneNum
         {
             String[] telephoneNums = new String[12];
             var nums = File.ReadAllLines(@"C:\Users\Ben\C-projects\TelephoneNum\TelephoneNumberingPlan.txt");
-            Scanner phone = new Scanner(@"C:\Users\Ben\C-projects\TelephoneNum\TelephoneNumberingPlan.txt");
-            char[] delimiters = { ' ', '\n'};
+            //Scanner phone = new Scanner(@"C:\Users\Ben\C-projects\TelephoneNum\TelephoneNumberingPlan.txt");
+            //char[] delimiters = { ' ', '\n'};
+            String input;
 
             //Setup();
 
@@ -22,22 +23,24 @@ namespace TelephoneNum
 
             //    Console.WriteLine(telephoneNums[0]);
             //}
-
+            Console.WriteLine("Please enter your phone number.");
+            input = Console.ReadLine();
+            if (input.StartsWith("301"))
+            {
+                
+            }
 
             //nums = nums[0].Split("       ");
             foreach (String i in nums)
             {
                 //i.Split("       ")
-                Console.WriteLine(i);
-                i.Trim();
-                
+                Console.WriteLine(i);              
                 //Console.WriteLine(nums[i+1]);
             }
 
             
 
-            Console.WriteLine("Please enter your phone number.");
-            Console.ReadLine();
+            
 
 
 
