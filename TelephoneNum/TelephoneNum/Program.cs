@@ -24,8 +24,13 @@ namespace TelephoneNum
             //}
 
 
-            nums = nums[0].Split(" ");
-            Console.WriteLine(nums[0] + nums[1]);
+            //nums = nums[0].Split("       ");
+            for (int i = 0; nums.Length > i; i++)
+            {
+                nums = nums[i].Split("       ");
+                Console.WriteLine(nums[0]);
+                //Console.WriteLine(nums[i+1]);
+            }
 
             
 
