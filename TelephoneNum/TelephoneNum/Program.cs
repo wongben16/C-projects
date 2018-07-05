@@ -25,10 +25,12 @@ namespace TelephoneNum
 
 
             //nums = nums[0].Split("       ");
-            for (int i = 0; nums.Length > i; i++)
+            foreach (String i in nums)
             {
-                nums = nums[i].Split("       ");
-                Console.WriteLine(nums[0]);
+                //i.Split("       ")
+                Console.WriteLine(i);
+                i.Trim();
+                
                 //Console.WriteLine(nums[i+1]);
             }
 
