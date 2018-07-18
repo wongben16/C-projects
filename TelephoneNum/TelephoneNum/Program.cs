@@ -8,35 +8,16 @@ namespace TelephoneNum
     {
         static void Main(string[] args)
         {
-            String[] telephoneNums = new String[12];
-            var nums = File.ReadAllLines(@"C:\Users\Ben\C-projects\TelephoneNum\TelephoneNumberingPlan.txt");
-            //Scanner phone = new Scanner(@"C:\Users\Ben\C-projects\TelephoneNum\TelephoneNumberingPlan.txt");
-            //char[] delimiters = { ' ', '\n'};
-            String input;
+            String[] nums = File.ReadAllLines(@"C:\Users\Ben\C-projects\TelephoneNum\TelephoneNumberingPlan.txt");
+           
 
-            //Setup();
-
-
-            //for (int i = 0; i < nums.Length; i++)
-            //{
-            //    telephoneNums = nums[i].Split(delimiters);
-
-            //    Console.WriteLine(telephoneNums[0]);
-            //}
-            Console.WriteLine("Please enter your phone number.");
-            input = Console.ReadLine();
-            if (input.StartsWith("301"))
-            {
-                
-            }
-
-            //nums = nums[0].Split("       ");
             foreach (String i in nums)
             {
-                //i.Split("       ")
-                Console.WriteLine(i);              
-                //Console.WriteLine(nums[i+1]);
+                i.Split(@"\s+");
+                Console.WriteLine(i);
+                Console.WriteLine(" ");
             }
+           
 
             
 
