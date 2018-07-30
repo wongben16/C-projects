@@ -34,6 +34,6 @@ namespace Factorial_5000
 
             Console.ReadKey();
         }
-
+        
     }
 }
