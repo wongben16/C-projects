@@ -8,29 +8,20 @@ namespace TelephoneNum
     {
         static void Main(string[] args)
         {
-            String[] telephoneNums = new String[12];
-            var nums = File.ReadAllLines(@"C:\Users\Ben\C-projects\TelephoneNum\TelephoneNumberingPlan.txt");
-            Scanner phone = new Scanner(@"C:\Users\Ben\C-projects\TelephoneNum\TelephoneNumberingPlan.txt");
-            char[] delimiters = { ' ', '\n'};
+            String[] nums = File.ReadAllLines(@"C:\Users\Ben\C-projects\TelephoneNum\TelephoneNumberingPlan.txt");
+           
 
-            //Setup();
-
-
-            //for (int i = 0; i < nums.Length; i++)
-            //{
-            //    telephoneNums = nums[i].Split(delimiters);
-
-            //    Console.WriteLine(telephoneNums[0]);
-            //}
-
-
-            nums = nums[0].Split(" ");
-            Console.WriteLine(nums[0] + nums[1]);
+            foreach (String i in nums)
+            {
+                i.Split(@"\s+");
+                Console.WriteLine(i);
+                Console.WriteLine(" ");
+            }
+           
 
             
 
-            Console.WriteLine("Please enter your phone number.");
-            Console.ReadLine();
+            
 
 
 
